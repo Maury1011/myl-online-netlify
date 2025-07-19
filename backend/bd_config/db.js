@@ -14,15 +14,15 @@ import MazosModel from '../models/mazos.model.js';  // Ajusta la ruta según cor
 import CartasMazoModel from '../models/carta.mazo.model.js';  // Ajusta la ruta según corresponda
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
+    process.env.DB_NAME,
+    process.env.DB_USER,
   process.env.DB_PASSWORD,  // <-- aquí debe ser un string
-  {
+    {
     host: process.env.DB_HOST,
     dialect: 'postgres',
     port: process.env.DB_PORT,
     logging: false,
-  }
+    }
 );
 
 console.log('Tipo de DB_PASSWORD:', typeof process.env.DB_PASSWORD);

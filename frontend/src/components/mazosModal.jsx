@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal';
+import Modal from './modal';
 
 function MazosModal({ visible, onClose, cartaId, mazos = [] }) {
   const añadirCarta = async (mazoId) => {

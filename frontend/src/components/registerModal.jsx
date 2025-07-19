@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './Modal';
+import Modal from './modal';
 import { useState } from 'react';
 
 function RegisterModal({ visible, onClose }) {
