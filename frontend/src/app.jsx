@@ -59,7 +59,7 @@ function App() {
     if (selectedRareza) params.append('rareza', selectedRareza);
     params.append('page', page);
 
-    const url = `http://localhost:3000/api/cartas?${params.toString()}`;
+    const url = `https://backend-bold-feather-1070.fly.dev/api/cartas?${params.toString()}`;
 
     fetch(url)
       .then(res => {

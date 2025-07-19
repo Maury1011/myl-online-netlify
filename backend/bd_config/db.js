@@ -13,20 +13,16 @@ import UsuariosModel from '../models/user.model.js';  // Ajusta la ruta según c
 import MazosModel from '../models/mazos.model.js';  // Ajusta la ruta según corresponda
 import CartasMazoModel from '../models/carta.mazo.model.js';  // Ajusta la ruta según corresponda
 
-const sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-  process.env.DB_PASSWORD,  // <-- aquí debe ser un string
-    {
-    host: process.env.DB_HOST,
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
     dialect: 'postgres',
-    port: process.env.DB_PORT,
-    logging: false,
+    protocol: 'postgres',
+    dialectOptions: {
+    ssl: {
+        require: true,
+        rejectUnauthorized: false // solo si Fly usa SSL (usualmente sí)
     }
-);
-
-console.log('Tipo de DB_PASSWORD:', typeof process.env.DB_PASSWORD);
-
+    }
+});
 
 const db = {};
 
