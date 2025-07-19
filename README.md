@@ -12,11 +12,11 @@
 
 ## 🚀 Tecnologías utilizadas
 
-- **Frontend**: HTML, CSS, JavaScript, EJS
+- **Frontend**: HTML, CSS, JavaScript, Webpack, Babel
 - **Backend**: Node.js + Express
 - **Base de datos**: PostgreSQL + Sequalize
-- **Vistas**: EJS templates
-- **Deploy**: Render
+- **Vistas**: React
+- **Deploy**: Netlify
 
 -------------
 
@@ -26,8 +26,8 @@ Sigue estos pasos para clonar y correr el proyecto en tu máquina local:
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/Maury1011/myl-online.git
-cd myl-online
+git clone https://github.com/Maury1011/myl-online-netlify.git
+cd myl-online-netlify
 
 # Instalar dependencias
 npm install
